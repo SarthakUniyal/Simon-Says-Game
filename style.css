@@ -1,0 +1,129 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.line-one,
+.line-two {
+    display: flex;
+    gap: 15px;
+}
+
+/* Button Styles */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 7.5px solid black;
+    cursor: pointer;
+}
+
+.red { background-color: #ff0000; }
+.yellow { background-color: #ffd700; }
+.green { background-color: #00cc44; }
+.purple { background-color: #9900cc; }
+
+.flash {
+    background-color: white;
+}
+
+.userflash {
+    background-color: green;
+}
+
+#instructions {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px 25px;
+    background-color: #f8f8f8;
+    border-left: 5px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: left;
+}
+
+#instructions ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#instructions li {
+    margin-bottom: 8px;
+}
+
+#instructions em {
+    color: #990000;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #instructions {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .line-one,
+    .line-two {
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    .btn {
+        height: 80px;
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #instructions {
+        margin: 20px 10px;
+        font-size: 13px;
+    }
+}
